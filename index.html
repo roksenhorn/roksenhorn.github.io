@@ -28,10 +28,9 @@ h3 {
 }
 #nav {
     width: calc((100% - 600px)/2); height: 100%;
-    position: fixed;
-    text-align: right;
-    /* put vertically centered */
+    position: fixed; text-align: right;
     display: flex; flex-direction: column; justify-content: center;
+    cursor: pointer;
 }
 #content {
     width: 600px; position: relative; left: calc((100% - 600px)/2);
@@ -42,18 +41,29 @@ h3 {
 p, h1 {
     padding: 32px 32px; margin: 0;
 }
+#gradient {
+    position: fixed; top: 0; left: 0; width: 100%; height: 40%;
+    background-image: -webkit-gradient(linear, left 10%, left bottom, from(#000105ff), to(#00030e00));
+    pointer-events: none;
+}
 </style>
 <script>
-    // on scroll, change the body background color
-    // if we're at the top of the page, make the background color the top of the gradient
-    // if we're at the bottom of the page, make the background color the bottom of the gradient
+    // on scroll, change the body background color so when
+    // we're scrolling beyond the top of the page, we extend the top of the gradient
+    // and when we're scrolling beyond the bottom of the page, we extend the bottom of the gradient
     $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
         var height = $(document).height() - $(window).height();
-        var percent = scroll / height;
+        var percent = $(window).scrollTop() / height;
         let color = (percent < 0.5) ? "#000105" : "#000824";
         $("body").css("background-color", color);
     });
+
+    // make the page feel "heavy"
+    document.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        window.scrollBy({ top: e.deltaY * 0.25 });
+    }, { passive: false });
+
 </script>
 </head>
 <body>
@@ -72,5 +82,6 @@ p, h1 {
         <p><h2>Coming Soon</h2><h3>2023</h3></p>
         <div id="vspace"></div>
     </section>
+    <div id="gradient"></div>
 </body>
 </html>
