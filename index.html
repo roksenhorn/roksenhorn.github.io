@@ -1,17 +1,76 @@
 <html>
 <head>
 <title>Ryan's List</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 body {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000517), to(#000824));
+    background-color: #000105;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000105), to(#000824));
+    background-attachment: fixed;
     margin: 0; padding: 0;
+    font-family: system-ui;
+    font-size: 32px;
+    display: flex; flex-direction: row;
 }
 h1 {
     color: #363EFF;
+    font-weight: normal; font-size: 32px;
+}
+h2 {
+    color: #E0E0E0;
+    font-weight: bold; font-size: 32px;
+    padding: 0; margin: 0;
+}
+h3 {
+    color: #545454;
+    font-weight: normal; font-size: 32px;
+    padding: 0; margin: 0;
+}
+#nav {
+    width: calc((100% - 600px)/2); height: 100%;
+    position: fixed;
+    text-align: right;
+    /* put vertically centered */
+    display: flex; flex-direction: column; justify-content: center;
+}
+#content {
+    width: 600px; position: relative; left: calc((100% - 600px)/2);
+}
+#vspace {
+    height: calc(50vh - 83px);
+}
+p, h1 {
+    padding: 32px 32px; margin: 0;
 }
 </style>
+<script>
+    // on scroll, change the body background color
+    // if we're at the top of the page, make the background color the top of the gradient
+    // if we're at the bottom of the page, make the background color the bottom of the gradient
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var height = $(document).height() - $(window).height();
+        var percent = scroll / height;
+        let color = (percent < 0.5) ? "#000105" : "#000824";
+        $("body").css("background-color", color);
+    });
+</script>
 </head>
 <body>
     <section id="nav"><h1>Ryan's List</h1></section>
+    <section id="content">
+        <div id="vspace"></div>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <div id="vspace"></div>
+    </section>
 </body>
 </html>
