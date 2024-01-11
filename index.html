@@ -38,13 +38,40 @@ h3 {
 #vspace {
     height: calc(50vh - 83px);
 }
-p, h1 {
+.item, h1 {
     padding: 32px 32px; margin: 0;
 }
 #gradient {
     position: fixed; top: 0; left: 0; width: 100%; height: 40%;
     background-image: -webkit-gradient(linear, left 10%, left bottom, from(#000105ff), to(#00030e00));
     pointer-events: none;
+}
+.item {
+    /* children are columns */
+    display: flex;
+}
+.icon {
+    width: 32px; height: 32px; margin: 4px 16px 0 0;
+    background-size: contain; background-repeat: no-repeat;
+    background-position: center;
+}
+.icon.film {
+    background-color: red;
+}
+.icon.series {
+    background-color: blue;
+}
+.icon.resto {
+    background-color: green;
+}
+.icon.tweet {
+    background-color: yellow;
+}
+.icon.link {
+    background-color: orange;
+}
+.icon.book {
+    background-color: purple;
 }
 </style>
 <script>
@@ -70,16 +97,16 @@ p, h1 {
     <section id="nav"><h1>Ryan's List</h1></section>
     <section id="content">
         <div id="vspace"></div>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
-        <p><h2>Coming Soon</h2><h3>2023</h3></p>
+        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="resto icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="series icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="tweet icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="link icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="book icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
+        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
         <div id="vspace"></div>
     </section>
     <div id="gradient"></div>
