@@ -1,7 +1,6 @@
-<html>
-<head>
-<title>Ryan's List</title>
+<head><title>Ryan's List</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="assets/favicon.png" />
 <style>
 body {
     background-color: #000105;
@@ -11,6 +10,8 @@ body {
     font-family: system-ui;
     font-size: 32px;
     display: flex; flex-direction: row;
+    cursor: default;
+    user-select: none;
 }
 h1 {
     color: #363EFF;
@@ -20,17 +21,24 @@ h2 {
     color: #E0E0E0;
     font-weight: bold; font-size: 32px;
     padding: 0; margin: 0;
+    width: fit-content;
+    padding: 2px 10px; margin: -2px -10px; border-radius: 4px;
 }
+h2.link {
+    cursor: pointer;
+}
+h2.link:hover { background-color: #363EFF; }
+h2.link:active { background-color: #363EFF; opacity: 0.9; transition: opacity 0.15s; }
 h3 {
     color: #545454;
     font-weight: normal; font-size: 32px;
     padding: 0; margin: 0;
+    width: fit-content;
 }
 #nav {
     width: calc((100% - 600px)/2); height: 100%;
     position: fixed; text-align: right;
     display: flex; flex-direction: column; justify-content: center;
-    cursor: pointer;
 }
 #content {
     width: 600px; position: relative; left: calc((100% - 600px)/2);
@@ -51,9 +59,9 @@ h3 {
     display: flex;
 }
 .icon {
-    width: 42px; height: 42px; margin: 2px 16px 0 0;
+    width: 51px; height: 42px; margin: 2px 16px 0 0;
     background-size: contain; background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 .icon.film {
     background-image: url("assets/film.png");
@@ -74,6 +82,31 @@ h3 {
     background-color: purple;
 }
 </style>
+</head>
+
+<body>
+    <section id="nav"><h1>Ryan's List</h1></section>
+    <section id="content">
+        <div id="vspace"></div>
+        <div class="item">
+            <div class="film icon"></div>
+            <div>
+                <h2>Kill Bill Vol. 1 &amp; 2</h2>
+                <h3>2003, 2004</h3>
+            </div>
+        </div>
+        <div class="item">
+            <div class="resto icon"></div>
+            <div>
+                <h2 class="link" url="https://greensrestaurant.com">Greens</h2>
+                <h3>Marina, San Francisco</h3>
+            </div>
+        </div>
+        <div id="vspace"></div>
+    </section>
+    <div id="gradient"></div>
+</body>
+
 <script>
     // on scroll, change the body background color so when
     // we're scrolling beyond the top of the page, we extend the top of the gradient
@@ -91,24 +124,8 @@ h3 {
         window.scrollBy({ top: e.deltaY * 0.25 });
     }, { passive: false });
 
+    // onclick h2, open the url
+    $("h2").click(function() {
+        window.open($(this).attr("url"), "_blank");
+    });
 </script>
-</head>
-<body>
-    <section id="nav"><h1>Ryan's List</h1></section>
-    <section id="content">
-        <div id="vspace"></div>
-        <div class="item"><div class="film icon"></div><div><h2>Kill Bill Vol. 1 &amp; 2</h2><h3>2003, 2004</h3></div></div>
-        <div class="item"><div class="resto icon"></div><div><h2>Greens</h2><h3>Marina, San Francisco</h3></div></div>
-        <div class="item"><div class="series icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="tweet icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="link icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="book icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div class="item"><div class="film icon"></div><div><h2>Coming Soon</h2><h3>2023</h3></div></div>
-        <div id="vspace"></div>
-    </section>
-    <div id="gradient"></div>
-</body>
-</html>
