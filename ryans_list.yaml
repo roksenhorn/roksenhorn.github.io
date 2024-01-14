@@ -48,3 +48,24 @@
   subtitle: 2023
   review: Hyper-stylized and utterly ridiculous
   added: 2023-08-20
+
+# Restaurants
+
+- resto: Greens
+  url: https://greensrestaurant.com
+  subtitle: Marina, San Francisco
+  review: Hippie food with a view
+  added: 2023-12-21
+
+- resto: St. Francis Fountain
+  subtitle: Mission, San Francisco
+  review: California diner food at its best
+  added: 2024-01-14
+
+# Writing
+
+- writing: I should have loved biology
+  url: https://jsomers.net/i-should-have-loved-biology
+  subtitle: James Somers
+  review: So *that's* how a cell works
+  added: 2023-08-02
