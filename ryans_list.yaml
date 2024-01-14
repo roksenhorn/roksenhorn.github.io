@@ -1,3 +1,10 @@
+# Films
+
+- film: Kill Bill Vol. 1 & 2
+  subtitle: 2003, 2004
+  review: Bloody fun
+  added: 2024-01-03
+
 # Series
 
 - series: The White Lotus
@@ -41,10 +48,3 @@
   subtitle: 2023
   review: Hyper-stylized and utterly ridiculous
   added: 2023-08-20
-
-- series: TODO
-  url: null
-  subtitle: todo
-  review: todo
-  added: todo
-
