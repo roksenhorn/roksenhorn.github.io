@@ -17,6 +17,7 @@ h1 {
     color: #363EFF;
     font-weight: normal; font-size: 32px;
     padding: 0 32px; margin: 0;
+    cursor: pointer;
 }
 h2 {
     color: #E0E0E0;

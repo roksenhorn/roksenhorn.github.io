@@ -1,5 +1,5 @@
 <head>
-    <title>Ryan's List</title>
+    <title>Ryan's List – Eats</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="style.css" />
@@ -338,6 +338,11 @@
         e.preventDefault();
         window.scrollBy({ top: e.deltaY * 0.35 });
     }, { passive: false });
+
+    // onclick h1, go back to the home page
+    $("h1").click(function() {
+        window.location.href = "index.html";
+    });
 
     // onclick h2, open the url
     $("h2").click(function() {
