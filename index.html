@@ -1,222 +1,19 @@
-<head><title>Ryan's List</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="icon" type="image/png" href="assets/favicon.png" />
-<style>
-body {
-    background-color: #000105;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000105), to(#000824));
-    background-attachment: fixed;
-    margin: 0; padding: 0;
-    font-family: system-ui;
-    font-size: 32px;
-    display: flex; flex-direction: row;
-    cursor: default;
-    user-select: none;
-}
-h1 {
-    color: #363EFF;
-    font-weight: normal; font-size: 32px;
-    padding: 0 32px; margin: 0;
-}
-h2 {
-    color: #E0E0E0;
-    font-weight: bold; font-size: 32px;
-    padding: 0; margin: 0; width: fit-content;
-    padding: 2px 10px; margin: -2px -10px; border-radius: 4px;
-}
-h2.link {
-    cursor: pointer;
-}
-h2.link:hover { background-color: #363EFF; }
-h2.link:active { background-color: #363EFF; opacity: 0.9; transition: opacity 0.15s; }
-h3 {
-    color: #545454;
-    font-weight: normal; font-size: 24px;
-    padding: 0; margin: 0; width: fit-content;
-}
-h4 {
-    color: #363EFF;
-    font-weight: normal; font-size: 24px; font-style: italic;
-    padding: 0; margin: 14px 0 0 0; width: fit-content;
-}
-h4::before { content: open-quote; opacity: 0.55; margin-left: -10px; }
-h4::after { content: close-quote; opacity: 0.55; }
-h5 {
-    opacity: 0.55;
-    font-weight: normal; font-size: 16px;
-    margin: 2px 0; padding: 0;
-}
-#nav {
-    width: calc((100% - 600px)/2); height: 100%;
-    position: fixed; text-align: right;
-    display: flex; flex-direction: column; justify-content: center;
-}
-#content {
-    width: 600px; position: relative; left: calc((100% - 600px)/2);
-}
-#vspace {
-    height: calc(50vh - 68px);
-}
-#gradient {
-    position: fixed; top: 0; left: 0; width: 100%; height: 30%;
-    background-image: -webkit-gradient(linear, left 10%, left bottom, from(#000105ff), to(#00030e00));
-    pointer-events: none;
-}
-#gradient2 {
-    position: fixed; bottom: 0; left: 0; width: 100%; height: 32px;
-    background-image: -webkit-gradient(linear, left 10%, left bottom, from(#00082400), to(#000824aa));
-}
-#link_block {
-    position: fixed; top: 0; left: 0; width: 100%; height: 10%;
-    pointer-events:all;
-}
-article {
-    display: flex;
-    padding: 48px 32px; margin: 0;
-}
-icon {
-    width: 51px; height: 42px; margin: 2px 16px 0 0;
-    background-size:contain; background-repeat: no-repeat; background-position: right;
-}
-.film icon { background-image: url("assets/film.png"); }
-.series icon { background-image: url("assets/series.png"); }
-.resto icon { background-image: url("assets/resto.png"); }
-.writing icon { background-image: url("assets/writing.png"); }
-.book icon { background-color: purple; }
-.film h4, .film h5 { color: #363EFF; }
-.series h4, .series h5 { color: #709d79; }
-.resto h4, .resto h5 { color: #e67e33; }
-.writing h4, .writing h5 { color: #faca33; }
-.book h4, .book h5 { color: #e67e33; }
-.twitter-tweet {
-    padding: 32px; margin: -16px -32px;
-    background: black; color: white; border-radius: 16px; border: 1px solid #363EFF33;
-    font-size: 0.5em;
-}
-.twitter-tweet p { margin: 0; padding: 0; }
-</style>
+<head>
+    <title>Ryan's List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-    <section id="nav"><h1>Ryan's List</h1></section>
-    <section id="content">
-        <div id="vspace"></div>
-
-        <article class="resto">
-            <icon></icon>
-            <div>
-                <h2>St. Francis Fountain</h2>
-                <h3>Mission, San Francisco</h3>
-                <h4>California diner food at its best</h4>
-                <h5>January 2024</h5>
-            </div>
-        </article>
-
-        <article class="film">
-            <icon></icon>
-            <div>
-                <h2>Kill Bill Vol. 1 & 2</h2>
-                <h3>2003, 2004</h3>
-                <h4>Bloody fun</h4>
-                <h5>January 2024</h5>
-            </div>
-        </article>
-
-        <article class="resto">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://greensrestaurant.com">Greens</h2>
-                <h3>Marina, San Francisco</h3>
-                <h4>Hippie food with a view</h4>
-                <h5>December 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.amazon.com/Im-A-Virgo-Season-1/dp/B0B8PXXV2M">I'm a Virgo</h2>
-                <h3>2023</h3>
-                <h4>Hyper-stylized and utterly ridiculous</h4>
-                <h5>August 2023</h5>
-            </div>
-        </article>
-
-        <article class="writing">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://jsomers.net/i-should-have-loved-biology">I should have loved biology</h2>
-                <h3>James Somers</h3>
-                <h4>So <b>that's</b> how a cell works</h4>
-                <h5>August 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.netflix.com/title/81447461">Beef</h2>
-                <h3>2003</h3>
-                <h4>Pretty drama that escalates quickly</h4>
-                <h5>July 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.netflix.com/title/81447461">30 Rock</h2>
-                <h3>2006–2013</h3>
-                <h4>I was overdue for a full watch-through</h4>
-                <h5>July 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.netflix.com/title/81311783">Chimp Empire</h2>
-                <h3>2003</h3>
-                <h4>Incredible footage of our not-so-distant cousins</h4>
-                <h5>June 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://en.wikipedia.org/wiki/Paul_T._Goldman">Paul T. Goldman</h2>
-                <h3>2003</h3>
-                <h4>A weird, weird mix of documentary and fiction</h4>
-                <h5>May 2023</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.hbo.com/curb-your-enthusiasm">Curb Your Enthusiasm</h2>
-                <h3>Since 2000</h3>
-                <h4>You sick, four-eyed fuck!</h4>
-                <h5>December 2022</h5>
-            </div>
-        </article>
-
-        <article class="series">
-            <icon></icon>
-            <div>
-                <h2 class="link" url="https://www.hbo.com/the-white-lotus">The White Lotus</h2>
-                <h3>Since 2021</h3>
-                <h4>Instantly classic</h4>
-                <h5>November 2022</h5>
-            </div>
-        </article>
-
-        <div id="vspace"></div>
+<body class="home">
+    <section id="navs">
+        <h1 id="nav_label">Ryan's List: </h1>
+        <icon class="film nav" alt="Films" color="#363EFF" style="width: 68px; margin: 0;"></icon>
+        <icon class="series nav" alt="Series" color="#709d79" style="width: 68px; margin: 0;"></icon>
+        <icon class="resto nav" alt="Eats" color="#e67e33" style="width: 68px; margin: 0;"></icon>
+        <icon class="writing nav" alt="Articles" color="#faca33" style="width: 68px; margin: 0;"></icon>
+        <div id="nav_highlight"></div>
     </section>
-    <div id="gradient"></div>
-    <div id="gradient2"></div>
-    <div id="link_block"></div>
 </body>
 
 <script>
@@ -229,16 +26,51 @@ icon {
         $("body").css("background-color", color);
     });
 
-    // make the page feel "heavy"
-    document.addEventListener('wheel', function(e) {
-        e.preventDefault();
-        window.scrollBy({ top: e.deltaY * 0.35 });
-    }, { passive: false });
+    // highlights behind icons
+    var highlighted = false;
 
-    // onclick h2, open the url
-    $("h2").click(function() {
-        if ($(this).attr("url")) {
-            window.open($(this).attr("url"), "_blank");
-        }
+    let navs = document.getElementsByClassName("nav");
+    for (let i = 0; i < navs.length; i++) {
+        navs[i].addEventListener("mouseover", function() {
+            if (!highlighted) {
+                $("#nav_highlight").css('transition', 'opacity 0.15s');
+            } else {
+                $("#nav_highlight").css('transition', 'background-color 0.25s, left 0.25s, opacity 0.15s');
+            }
+            highlighted = true;
+            let left = this.offsetLeft + (this.offsetWidth - $("#nav_highlight").width())/2
+            $("#nav_highlight").css("left", left + "px");
+            $("#nav_highlight").css("opacity", "1");
+            $("#nav_highlight").css("background-color", this.getAttribute("color"));
+            $("#nav_label").text(this.getAttribute("alt"));
+            $("#nav_label").css("color", this.getAttribute("color"));
+            $("#nav_label").css("font-weight", "bold");
+        });
+
+        navs[i].addEventListener("click", function() {
+            let page = this.getAttribute("alt").toLowerCase() + ".html";
+            window.location.href = page;
+        });
+    }
+
+    $("#nav_label").on("mouseover", function(e) {
+        $("#nav_highlight").css('transition', 'opacity 0.15s');
+        $("#nav_highlight").css("opacity", "0");
+        $("#nav_label").text("All");
+        $("#nav_label").css("color", "#363EFF");
+        $("#nav_label").css("font-weight", "bold");
+    });
+
+    $("#nav_label").on("click", function(e) {
+        window.location.href = "all.html";
+    });
+
+    $("#navs").on("mouseleave", function(e) {
+        highlighted = false;
+        $("#nav_highlight").css('transition', 'opacity 0.15s');
+        $("#nav_highlight").css("opacity", "0");
+        $("#nav_label").text("Ryan's List:");
+        $("#nav_label").css("color", "#363EFF");
+        $("#nav_label").css("font-weight", "normal");
     });
 </script>

@@ -14,7 +14,12 @@ def generate():
 
     out = ""
     for item in ryans_list:
-        out += item_html(item)
+        try:
+            out += item_html(item)
+        except Exception as e:
+            print("\n\nError with item:")
+            print(item, "\n\n")
+            raise e
 
     print(out)
 
@@ -38,6 +43,11 @@ def format(s):
     while "*" in s:
         s = s.replace("*", "<b>", 1)
         s = s.replace("*", "</b>", 1)
+
+    # turn _word_ into <i>word</i>
+    while "_" in s:
+        s = s.replace("_", "<i>", 1)
+        s = s.replace("_", "</i>", 1)
 
     return s
 

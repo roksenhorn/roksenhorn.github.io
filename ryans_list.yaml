@@ -5,6 +5,168 @@
   review: Bloody fun
   added: 2024-01-03
 
+- film: Arrival 2016
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Primer 2004
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: The Wonderful Story of Henry Sugar 2023
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Contact 1997
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Grizzly Man 2005
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Bottoms 2023
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Oppenheimer 2023
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Barbie 2023
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Fantastic Mr. Fox 2009
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Asteroid City 2023
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Guillermo del Toro’s Pinocchio 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Big Bug 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: "2001: A Space Odyssey 1968"
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: M3GAN 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: The Menu 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: The Cook, the Thief, His Wife, and Her Lover 1989
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: African Desperate 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Studio 54 2018
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Triangle of Sadness 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Nope 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Klaus 2019
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Everything Everywhere All At Once 2022
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Inside 2021
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Luca 2021
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: My Octopus Teacher 2020
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Do the Right Thing 1989
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
+- film: Go 1999
+  url: a
+  subtitle: a
+  review: a
+  added: 1900-01-01
+
 # Series
 
 - series: The White Lotus
@@ -49,6 +211,96 @@
   review: Hyper-stylized and utterly ridiculous
   added: 2023-08-20
 
+- series: Fleabag
+  url: https://www.amazon.com/Fleabag-Season-1/dp/B0875K9Q4P
+  subtitle: 2016–2019
+  review: Comedic perfection
+  added: 2019-05-01
+
+- series: "The Beatles: Get Back"
+  url: https://www.disneyplus.com/series/the-beatles-get-back/7DcWEeWVqrkE
+  subtitle: 2021
+  review: Step inside the room where it happened
+  added: 2022-01-07
+
+- series: Dark
+  url: https://www.netflix.com/title/80100172
+  subtitle: 2017–2019
+  review: Mind-bending German series
+  added: 2020-11-10
+
+- series: Pose
+  url: https://www.fxnetworks.com/shows/pose
+  subtitle: 2018–2021
+  review: A show to fall in love with
+  added: 2020-07-11
+
+- series: The Night Manager
+  url: https://www.amazon.com/The-Night-Manager-Season-1/dp/B01EILE54S
+  subtitle: 2016
+  review: A perfect mini-series
+  added: 2020-02-20
+
+- series: Bodyguard
+  url: https://www.netflix.com/title/80235864
+  subtitle: 2018
+  review: Edge-of-your-seat action
+  added: 2019-04-23
+
+- series: Yellowjackets
+  url: https://www.paramountplus.com/shows/yellowjackets/
+  subtitle: Since 2021
+  review: Twisted and captivating
+  added: 2021-12-06
+
+- series: Julia
+  url: https://www.max.com/shows/julia/9fab087a-73f8-4e08-b778-bd502697295e
+  subtitle: 2022–2023
+  review: Captures the charm of Julia Child
+  added: 2022-06-30
+
+- series: Big Little Lies
+  url: https://www.hbo.com/big-little-lies
+  subtitle: 2017–2019
+  review: Genre-bending and emotionally charged
+  added: 2022-08-11
+
+- series: Prehistoric Planet
+  url: https://tv.apple.com/us/show/prehistoric-planet/umc.cmc.4lh4bmztauvkooqz400akxav
+  subtitle: Since 2022
+  review: _Planet Earth_, but dinosaurs
+  added: 2022-09-27
+
+- series: The Rehearsal
+  url: https://www.hbo.com/the-rehearsal
+  subtitle: Since 2022
+  review: Hard to believe this show even exists
+  added: 2022-09-02
+
+- series: Severance
+  url: https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx
+  subtitle: Since 2022
+  review: A visionary thriller that sits with you
+  added: 2022-03-26
+
+- series: Succession
+  url: https://www.hbo.com/succession
+  subtitle: 2018–2023
+  review: Modern day Bluths you love to hate
+  added: 2022-05-09
+
+- series: For All Mankind
+  url: https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7
+  subtitle: Since 2019
+  review: What if the space race never ended?
+  added: 2022-01-04
+
+- series: The Bear
+  url: https://www.fxnetworks.com/shows/the-bear
+  subtitle: Since 2022
+  review: Stressful but still something special
+  added: 2022-10-17
+
 # Restaurants
 
 - resto: Greens
@@ -61,6 +313,12 @@
   subtitle: Mission, San Francisco
   review: California diner food at its best
   added: 2024-01-14
+
+- resto: todo
+  url: todo
+  subtitle: todo
+  review: todo
+  added: 2023-12-21
 
 # Writing
 
