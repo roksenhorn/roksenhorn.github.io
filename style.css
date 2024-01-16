@@ -51,7 +51,10 @@ h5 {
     position: fixed; text-align: right;
     display: flex; flex-direction: column; justify-content: center;
 }
-#nav_label { width: 170px; text-align: right; display: inline-block; margin: 0; padding: 0 32px 0 0; cursor: pointer; }
+#nav_label {
+    width: 170px; text-align: right; display: inline-block; margin: 0; padding: 0 32px 0 0;
+    cursor: pointer;
+}
 #nav_highlight {
     width: 54px; height: 44px; margin: -1px 0; position: absolute; z-index: -1;
     background-color: #363EFF; border-radius: 8px;

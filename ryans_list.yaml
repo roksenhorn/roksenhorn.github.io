@@ -301,7 +301,12 @@
   review: Stressful but still something special
   added: 2022-10-17
 
-# Restaurants
+# Eats
+
+- resto: St. Francis Fountain
+  subtitle: Mission, San Francisco
+  review: California diner food at its best
+  added: 2024-01-14
 
 - resto: Greens
   url: https://greensrestaurant.com
@@ -309,16 +314,175 @@
   review: Hippie food with a view
   added: 2023-12-21
 
-- resto: St. Francis Fountain
+- resto: Chome
   subtitle: Mission, San Francisco
-  review: California diner food at its best
-  added: 2024-01-14
-
-- resto: todo
-  url: todo
-  subtitle: todo
-  review: todo
+  review: Izakaya with enough small bites to fill you up
   added: 2023-12-21
+
+- resto: Boogaloos
+  url: http://www.boogaloossf.com/
+  subtitle: Mission, San Francisco
+  review: Latin breakfast
+  added: 2023-11-21
+
+- resto: Dumpling Specialist
+  url: https://www.dumplingspecialist.com
+  subtitle: Sunset District, San Francisco
+  review: Can't go wrong here
+  added: 2023-11-03
+
+- resto: Gola
+  url: https://www.golarestaurantsf.com
+  subtitle: Mission, San Francisco
+  review: Tunisian on Valenca
+  added: 2023-10-28
+
+- resto: Otra
+  url: https://www.otrasf.com
+  subtitle: Lower Haight, San Francisco
+  review: Mushroom-forward Mexican tapas
+  added: 2023-09-08
+
+- resto: House of Pancakes
+  subtitle: Sunset District, San Francisco
+  review: Cash-only Chinese spot
+  added: 2023-08-17
+
+- resto: Sandy’s Muffulettas
+  url: https://www.sandysmuffs.com
+  subtitle: Haight-Ashbury, San Francisco
+  review: Still dreaming about the egg salad sandwich...
+  added: 2023-08-08
+
+- resto: Nari
+  url: https://www.narisf.com
+  subtitle: Japantown, San Francisco
+  review: Sophisticated Thai
+  added: 2023-08-07
+
+- resto: Mama Ji’s
+  url: https://www.mamajissf.com
+  subtitle: Mission, San Francisco
+  review: The "3 C's" dishes are awesome
+  added: 2023-01-08
+
+- resto: Mission Chinese Food
+  url: https://www.missionchinesefood.com
+  subtitle: Mission, San Francisco
+  review: Their mapo tofu is iconic
+  added: 2022-12-04
+
+- resto: Cha-Ya
+  url: https://www.chayasf.com
+  subtitle: Mission, San Francisco
+  review: Clean vegan temple food
+  added: 2022-09-18
+
+- resto: Mission Curry House
+  subtitle: Mission, San Francisco
+  review: Don’t miss the paneer pakora!
+  added: 2022-04-06
+
+- resto: Udupi Palace
+  url: https://udupisf.com/
+  subtitle:
+  review: Authentic, low-key south Indian dishes
+  added: 2022-03-29
+
+- resto: Wooly Pig
+  url: https://woolypigsf.com
+  subtitle: Dogpatch, San Francisco
+  review: The best tofu bahn mi you’ll ever have
+  added: 2022-02-12
+
+- resto: Chisai Sushi Club
+  url: https://chisaisushiclub.com
+  subtitle: Bernal Heights, San Francisco
+  review: High-end and intimate with mind-blowing vegan or fish omakase
+  added: 2021-10-20
+
+- resto: United Dumplings
+  url: https://uniteddumplings.com
+  subtitle: Bernal Heights, San Francisco
+  review: A perfect menu
+  added: 2021-08-05
+
+- resto: Bon, Nene
+  url: https://bonnene.com
+  subtitle: Mission, San Francisco
+  review: Charming Japanese spot
+  added: 2021-07-24
+
+- resto: Beit Rima
+  url: https://beitrimasf.com
+  subtitle: Cole Valley, San Francisco
+  review: Elevated falafel plates
+  added: 2021-07-17
+
+- resto: Umami Express
+  url: https://umamiexpress.co
+  subtitle: Online
+  review: Hearty, fast lunch delivery
+  added: 2021-07-01
+
+- resto: Shizen
+  url: https://www.shizensf.com/
+  subtitle: Mission, San Francisco
+  review: Vegan sushi you'll love
+  added: 2021-06-19
+
+- resto: Burma Love
+  url: https://www.burmalove.co/
+  subtitle: Mission, San Francisco
+  review: Worth the crowds
+  added: 2021-05-05
+
+- resto: The Pizza Shop
+  subtitle: Mission, San Francisco
+  review: The best slice outside the tri-state area
+  added: 2021-05-05
+
+- resto: Bac Lieu
+  url: https://baclieusf.com/
+  subtitle: Bernal Heights, San Francisco
+  review: Hole-in-the-wall Vietnamese
+  added: 2021-04-27
+
+- resto: Tropisueño
+  url: https://www.tropisueno.com/
+  subtitle: SoMa, San Francisco
+  review: Great for a date night or happy hour
+  added: 2021-04-26
+
+- resto: Papito
+  url: https://papitosf.com/
+  subtitle: Potrero Hill, San Francisco
+  review: Reliably good taqueria
+  added: 2021-03-30
+
+- resto: The Little Chihuahua
+  url: https://www.thelittlechihuahua.com/
+  subtitle: Noe Valley, San Francisco
+  review: Modern Mexican food
+  added: 2021-02-27
+
+- resto: Venga
+  url: https://www.vengaempanadas.com/
+  subtitle: Mission, San Francisco
+  review: A wide array of empanadas
+  added: 2021-02-11
+
+- resto: Tataki
+  url: https://www.tatakisushibar.com/
+  subtitle: Pacific Heights, San Francisco
+  review: Sushi made with love
+  added: 2021-02-03
+
+- resto: Ryoko’s
+  url: https://ryokos.com
+  subtitle: Tenderloin, San Francisco
+  review: Cheap, fun late night Japanese bits
+  added: 2021-01-24
 
 # Writing
 

@@ -1,12 +1,13 @@
 #! /bin/env python
 
+import argparse
 import yaml
 
 
 RYANS_LIST_YAML = "ryans_list.yaml"
 
 
-def generate():
+def generate(only=None):
     with open(RYANS_LIST_YAML, "r") as f:
         ryans_list = yaml.safe_load(f)
 
@@ -15,7 +16,8 @@ def generate():
     out = ""
     for item in ryans_list:
         try:
-            out += item_html(item)
+            if only is None or only == item_category(item):
+                out += item_html(item)
         except Exception as e:
             print("\n\nError with item:")
             print(item, "\n\n")
@@ -74,4 +76,11 @@ def item_html(item):
 
 
 if __name__ == "__main__":
-    generate()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--only", default=None, help="Only generate the given category")
+    args = parser.parse_args()
+
+    if args.only:
+        generate(only=args.only)
+    else:
+        generate()
